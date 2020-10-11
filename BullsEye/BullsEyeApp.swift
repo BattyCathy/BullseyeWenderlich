@@ -10,7 +10,9 @@ import SwiftUI
 struct BullsEyeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()        }
+            ContentView()
+            
+        }
     }
 }
 

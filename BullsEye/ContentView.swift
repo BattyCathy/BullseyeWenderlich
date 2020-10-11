@@ -97,13 +97,12 @@ struct ContentView: View {
             Spacer()
             .alert(isPresented: $alertIsVisible){ () ->
                 Alert in
-               var roundedValue: Int  = Int(sliderValue)
                 return Alert(title: Text("\(reaction())"), message: Text("The slider's value is \(sliderValueRounded()).\n" +
-                                "You scored \(pointsForCurrentRound()) points this round." ), dismissButton: .default(Text("Try again"))
-                                    {
-                                        self.score = self.score + self.pointsForCurrentRound()
-                                        self.target = Int.random(in: 1 ... 100)
-                                        self.rounds = self.rounds + 1
+                    "You scored \(pointsForCurrentRound()) points this round." ), dismissButton: .default(Text("Try again"))
+                        {
+                        self.score = self.score + self.pointsForCurrentRound()
+                        self.target = Int.random(in: 1 ... 100)
+                        self.rounds = self.rounds + 1
                                 
                                         
                                     })
@@ -156,18 +155,21 @@ struct ContentView: View {
     func sliderValueRounded() -> Int {
         Int(sliderValue.rounded())
     }
-    func preBonusDifference() -> Int {
-        100 - abs(target-sliderValueRounded())
+    func difference() -> Int {
+        abs(target-sliderValueRounded())
+    }
+    func preBonusScore() -> Int {
+        100 - difference()
     }
     func pointsForCurrentRound() -> Int{
-        if preBonusDifference() == 100 {
-          return  preBonusDifference() + 100
+        if preBonusScore() == 100 {
+          return  preBonusScore() + 100
         }
-        if preBonusDifference() == 99 {
-            return preBonusDifference() + 50
+        if preBonusScore() == 99 {
+            return preBonusScore() + 50
         }
         else {
-           return preBonusDifference()
+           return preBonusScore()
         }
     }
         func reaction() -> String {
