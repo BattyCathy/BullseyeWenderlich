@@ -62,8 +62,9 @@
 				B1F2115625325E2900296722 /* Info.plist */,
 				B1F2115325325E2900296722 /* Preview Content */,
 			);
-			path = BullsEye;
-			sourceTree = "<group>";
+			name = BullsEye;
+			path = /Users/AustinRoach/Documents/GitHub/BullsEyeGame/BullseyeProjectFolder/BullsEye;
+			sourceTree = "<absolute>";
 		};
 		B1F2115325325E2900296722 /* Preview Content */ = {
 			isa = PBXGroup;
