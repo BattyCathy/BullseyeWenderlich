@@ -105,7 +105,8 @@ struct ContentView: View {
                         self.rounds = self.rounds + 1
                                 
                                         
-                                    })
+                        }
+                )
             }
             .background(Image("Button")).modifier((ShadowStyle()))
                 .accentColor(midnightBlue)
