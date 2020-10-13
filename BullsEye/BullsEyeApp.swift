@@ -9,9 +9,14 @@ import SwiftUI
 @main
 struct BullsEyeApp: App {
     var body: some Scene {
-        WindowGroup {
+        
+        let contentView = NavigationView {
             ContentView()
             AboutView()
+        }
+        WindowGroup {
+            contentView
+            
             
         }
     }
