@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+let wenderlichSkinTone = Color(red: 255.0 / 255.0, green: 214.0 / 255.0 , blue: 179.0 / 255.0)
 struct AboutView: View {
     var body: some View {
         VStack {
@@ -47,6 +47,7 @@ struct AboutView: View {
     
         }
     }
+    
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
