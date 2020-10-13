@@ -130,14 +130,9 @@ struct ContentView: View {
                     Text("Round").modifier(LabelStyle())
                     Text("\(rounds)").modifier(ValueStyle())
                     Spacer()
-                    Button(action: {
-                            print("ok")
-                        
-                    }){
-                        
-                    
+                    NavigationLink(destination: AboutView()) {
                         HStack {
-                            Image("InfoIcon")
+                        Image("InfoIcon")
                         Text("info").modifier(ButtonSmallTextStyle())
                         }
                     }
