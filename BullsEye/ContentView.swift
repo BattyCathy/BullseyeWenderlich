@@ -74,7 +74,7 @@ struct ContentView: View {
                     }
             Spacer()
             
-            //Slider Row
+//Slider Row
             
             HStack{
                 Text("1").modifier(LabelStyle())
@@ -83,7 +83,7 @@ struct ContentView: View {
                 
             }
             
-            //Button Row
+//Button Row
             
             Spacer()
             Button(action: {
@@ -103,14 +103,15 @@ struct ContentView: View {
                         self.score = self.score + self.pointsForCurrentRound()
                         self.target = Int.random(in: 1 ... 100)
                         self.rounds = self.rounds + 1
-                                
+                            
                                         
                         }
                 )
             }
             .background(Image("Button")).modifier((ShadowStyle()))
                 .accentColor(midnightBlue)
-            // Score Row
+// Score Row
+            
             HStack {
                 HStack{
                     Button(action: {
