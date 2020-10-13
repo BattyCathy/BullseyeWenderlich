@@ -11,6 +11,7 @@ struct BullsEyeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            AboutView()
             
         }
     }
