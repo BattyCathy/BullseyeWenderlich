@@ -63,7 +63,7 @@
 				B1F2115325325E2900296722 /* Preview Content */,
 			);
 			name = BullsEye;
-			path = /Users/AustinRoach/Documents/GitHub/BullsEyeGame/BullseyeProjectFolder/BullsEye;
+			path = /Users/AustinRoach/Documents/Coding/GitHub/BullsEyeGame/BullseyeProjectFolder/BullsEye;
 			sourceTree = "<absolute>";
 		};
 		B1F2115325325E2900296722 /* Preview Content */ = {
